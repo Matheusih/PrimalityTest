@@ -22,7 +22,7 @@ int main(int argc, char **argv)
         }
         
     }
-    printf("Total de numeros primos: %d", cont);
+    printf("Total prime numbers: %d", cont);
 	return 0;
 }
 
@@ -52,7 +52,6 @@ int _isPrime(long long p){
 int _Fermat(int a,long long p){
     long long t;
     if( (t = modulo(a, p-1, p)) != 1 ){  //  its composed 100%
-        //printf("%lld", t );
         return 0;
     }
     else{                       //may be prime
@@ -93,9 +92,6 @@ int _MillerRabin(long long p){
         return 1;
     else
         return 0;
-        
-        
-    //return 0;
 }
 
 
